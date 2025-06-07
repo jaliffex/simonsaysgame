@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #101010 );
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-container {
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 90%;
+}
+
+#title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.game-info {
+    margin-bottom: 30px;
+}
+
+#start-btn {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#start-btn:hover {
+    background: #45a049;
+    transform: translateY(-2px);
+}
+
+#status, #round-info {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(2, 120px);
+    grid-template-rows: repeat(2, 120px);
+    gap: 15px;
+    justify-content: center;
+}
+
+.pad {
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: 3px solid #333;
+    opacity: 0.7;
+}
+
+.pad:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+.red-pad {
+    background-color: #ff4444;
+}
+
+.green-pad {
+    background-color: #44ff44;
+}
+
+.blue-pad {
+    background-color: #4444ff;
+}
+
+.yellow-pad {
+    background-color: #ffff44;
+}
+
+.pad.active {
+    opacity: 1 !important;
+    transform: scale(1.1) !important;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    border-color: white;
+}
+
+.pad.disabled {
+    cursor: not-allowed;
+    opacity: 0.4;
+}
+
+.hidden {
+    display: none;
+}
+
+.game-over {
+    background: #ff4444 !important;
+}
+
+.game-won {
+    background: #44ff44 !important;
+}

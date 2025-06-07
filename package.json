@@ -1,0 +1,13 @@
+{
+  "name": "simon-says-game",
+  "version": "1.0.0",
+  "description": "A simple Simon Says memory game",
+  "main": "script.js",
+  "scripts": {
+    "start": "npx serve . -p 5000",
+    "dev": "npx serve . -p 5000"
+  },
+  "keywords": ["game", "memory", "simon-says", "javascript"],
+  "author": "Student",
+  "license": "MIT"
+}

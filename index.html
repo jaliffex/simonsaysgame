@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Says Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1 id="title">Simon Says</h1>
+        
+        <div class="game-info">
+            <button id="start-btn">Start Game</button>
+            <div id="status" class="hidden">Click the pads in order!</div>
+            <div id="round-info" class="hidden">Round 1 of 5</div>
+        </div>
+        
+        <div class="game-board">
+            <div class="pad red-pad" data-color="red"></div>
+            <div class="pad green-pad" data-color="green"></div>
+            <div class="pad blue-pad" data-color="blue"></div>
+            <div class="pad yellow-pad" data-color="yellow"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
